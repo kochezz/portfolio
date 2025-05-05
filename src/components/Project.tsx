@@ -37,9 +37,9 @@ function Project() {
                 <p>Accompanying Streamlit App developed to help predict house prices from the previous python project </p>
             </div>
             <div className="project">
-                <a href="https://github.com/kochezz/" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/kochezz/" target="_blank" rel="noreferrer"><img src={mock02} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/kochezz" target="_blank" rel="noreferrer"><h2>Heart Attack Risk Assessment</h2></a>
-                <p>Analyzed patien data from Zheen Hospital in Erbil, Iraq, from January to May 2019 to create a model that helps to predict the likelyhood of a heart attack by implementing statistical methods such as logistic regression analysis. This project leveraged Python and various libraries such as Pandas, NumPy, Matplotlib, and Scikit-Learn.</p>
+                <p>Analyzed patien data from Zheen Hospital in Erbil, Iraq, from January to May 2019 to create a model that was in turn trained and validated to predict the likelyhood of a heart attack by implementing statistical methods namely logistic regression analysis. This project leveraged Python and various libraries such as Pandas, NumPy, Matplotlib, and Scikit-Learn.</p>
             </div>
             <div className="project">
                 <a href="https://github.com/kochezz" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>

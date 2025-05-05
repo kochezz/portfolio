@@ -16,50 +16,50 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
+            date="2024 - present"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Post Grad Student</h3>
+            <h4 className="vertical-timeline-element-subtitle">Athlone, IE</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+            Multidisciplinary professional currently upskilling through an NFQ Level 9 Post-grad in Data Science. Program covers a wide range of topics including Data Analytics, Machine Learning, Data Visualization, and Data Engineering.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
+            date="2021 - 2024"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Project Manager</h3>
+            <h4 className="vertical-timeline-element-subtitle">Athlone, IE</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+            Supervised the development and implementation of production capacity while ensuring compliance with regulatory standards through process innovation for API manufacturing. 
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
+            date="2012 - 2020"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Project Consultant</h3>
+            <h4 className="vertical-timeline-element-subtitle">Chingola, ZM</h4>
             <p>
-              Full-stack Development, API Development, User Experience
+            Developed and managed a strategic execution plan to ensure effective project execution with a cross-functional team. Ensured adherence to project scope, budget, and timelines.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2020"
+            date="2004 - 2012"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
+            <h3 className="vertical-timeline-element-title">Process Support Technical Specialist</h3>
+            <h4 className="vertical-timeline-element-subtitle">Longford, IE</h4>
             <p>
-              Automation, Data Governance, Statistical Analysis
+            Provided subject matter expertise for technical operations deliverables including product transfer and product launches from Abbott Lake County in Chicago USA to Abbott Longford in Ireland ensuring execution of necessary feasibility and pre-production activities.
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

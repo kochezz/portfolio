@@ -27,18 +27,18 @@ function Project() {
                 <p>A Multiple Linear Regression model implementing statistical methods built with R using R-Studio IDE and various libraries such as tidyverse, caret and ggplot2.</p>
             </div>
             <div className="project">
-                <a href="https://github.com/kochezz/PRJ01_Iris_Classification" target="_blank" rel="noreferrer"><img src={mock03} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/kochezz/PRJ01_Iris_Classification" target="_blank" rel="noreferrer"><h2>House Price Predction App</h2></a>
+                <a href="https://01-beda-house-price-prediction.streamlit.app/" target="_blank" rel="noreferrer"><img src={mock03} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://01-beda-house-price-prediction.streamlit.app/" target="_blank" rel="noreferrer"><h2>House Price Predction App</h2></a>
                 <p>Accompanying Streamlit App developed to help predict house prices from the previous python project.</p>
             </div>
             <div className="project">
-                <a href="https://01-beda-house-price-prediction.streamlit.app/" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://01-beda-house-price-prediction.streamlit.app/" target="_blank" rel="noreferrer"><h2>New Iris Flower Classifiction</h2></a>
+                <a href="https://github.com/kochezz/PRJ01_Iris_Classification" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/kochezz/PRJ01_Iris_Classification" target="_blank" rel="noreferrer"><h2>New Iris Flower Classifiction</h2></a>
                 <p>This project classifies iris flowers into one of three species based on their sepal and petal measurements, model developed using Python. </p>
             </div>
             <div className="project">
-                <a href="https://github.com/kochezz/" target="_blank" rel="noreferrer"><img src={mock02} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/kochezz" target="_blank" rel="noreferrer"><h2>Heart Attack Risk Assessment</h2></a>
+                <a href="https://github.com/kochezz/heart-attack-prediction-PY" target="_blank" rel="noreferrer"><img src={mock02} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/kochezz/heart-attack-prediction-PY" target="_blank" rel="noreferrer"><h2>Heart Attack Risk Assessment</h2></a>
                 <p>Analyzed patient data from Zheen Hospital in Erbil, Iraq, from January to May 2019 to create a model that was in turn trained and validated to predict the likelyhood of a heart attack by implementing statistical methods namely logistic regression analysis. This project leveraged Python and various libraries such as Pandas, NumPy, Matplotlib, and Scikit-Learn.</p>
             </div>
             <div className="project">
@@ -47,8 +47,8 @@ function Project() {
                 <p>Clinical Healthcare Analytics - Project is currently work in progress.</p>
             </div>
             <div className="project">
-                <a href="https://github.com/kochezz" target="_blank" rel="noreferrer"><img src={mock01} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/kochezz" target="_blank" rel="noreferrer"><h2>Heart Attack Risk Assessment App</h2></a>
+                <a href="https://beda-heart-attack-prediction.streamlit.app" target="_blank" rel="noreferrer"><img src={mock01} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://beda-heart-attack-prediction.streamlit.app" target="_blank" rel="noreferrer"><h2>Heart Attack Risk Assessment App</h2></a>
                 <p>Created a Streamlit app to accompany the analyzed and trained patient data to help predict the likelyhood of a heart attack based on variables used to create the logistic regression model.</p>
             </div>
             <div className="project">

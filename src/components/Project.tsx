@@ -27,14 +27,14 @@ function Project() {
                 <p>A Multiple Linear Regression model implementing statistical methods built with R using R-Studio IDE and various libraries such as tidyverse, caret and ggplot2.</p>
             </div>
             <div className="project">
-                <a href="https://github.com/kochezz/PRJ01_Iris_Classification" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/kochezz/PRJ01_Iris_Classification" target="_blank" rel="noreferrer"><h2>New Iris Flower Classifiction</h2></a>
-                <p>This project classifies iris flowers into one of three species based on their sepal and petal measurements, model developed using Python.</p>
+                <a href="https://github.com/kochezz/PRJ01_Iris_Classification" target="_blank" rel="noreferrer"><img src={mock03} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/kochezz/PRJ01_Iris_Classification" target="_blank" rel="noreferrer"><h2>House Price Predction App</h2></a>
+                <p>Accompanying Streamlit App developed to help predict house prices from the previous python project.</p>
             </div>
             <div className="project">
-                <a href="https://01-beda-house-price-prediction.streamlit.app/" target="_blank" rel="noreferrer"><img src={mock03} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://01-beda-house-price-prediction.streamlit.app/" target="_blank" rel="noreferrer"><h2>House Price Predction App</h2></a>
-                <p>Accompanying Streamlit App developed to help predict house prices from the previous python project </p>
+                <a href="https://01-beda-house-price-prediction.streamlit.app/" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://01-beda-house-price-prediction.streamlit.app/" target="_blank" rel="noreferrer"><h2>New Iris Flower Classifiction</h2></a>
+                <p>This project classifies iris flowers into one of three species based on their sepal and petal measurements, model developed using Python. </p>
             </div>
             <div className="project">
                 <a href="https://github.com/kochezz/" target="_blank" rel="noreferrer"><img src={mock02} className="zoom" alt="thumbnail" width="100%"/></a>

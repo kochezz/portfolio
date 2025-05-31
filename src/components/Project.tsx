@@ -28,7 +28,7 @@ function Project() {
             </div>
             <div className="project">
                 <a href="https://01-beda-house-price-prediction.streamlit.app/" target="_blank" rel="noreferrer"><img src={mock03} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://01-beda-house-price-prediction.streamlit.app/" target="_blank" rel="noreferrer"><h2>House Price Predction App</h2></a>
+                <a href="https://01-beda-house-price-prediction.streamlit.app/" target="_blank" rel="noreferrer"><h2>House Price Prediction App</h2></a>
                 <p>Accompanying Streamlit App developed to help predict house prices from the previous python project.</p>
             </div>
             <div className="project">

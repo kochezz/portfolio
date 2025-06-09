@@ -4,7 +4,7 @@
 
 ## What is this?
 
-This simple portfolio template is designed to showcase your past projects, career history, skill sets, and more.
+This simple portfolio template is designed to showcase your past projects, career history, skill sets, and more. Originally developed by Yuji Sato
 
 View the [Demo](https://kochezz.github.io/portfolio/).
 

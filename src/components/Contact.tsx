@@ -46,15 +46,13 @@ function Contact() {
     setIsSubmitting(true);
 
     try {
-      // EmailJS Integration with your credentials
+      // EmailJS Integration - sends to Gmail
       const result = await emailjs.sendForm(
-        'service_l9gmwci',      // Your Service ID
-        'template_5oreu2m',     // Your Template ID
-        form.current!,          // The form reference
-        '0PYaWxpG6RR69_Cpe'     // Your Public Key
+        'service_l9gmwci',
+        'template_5oreu2m',
+        form.current!,
+        '0PYaWxpG6RR69_Cpe'
       );
-      
-      console.log('Email sent successfully:', result.text);
       
       // Clear form on success
       setName('');
@@ -124,12 +122,12 @@ function Contact() {
 
           {submitStatus === 'success' && (
             <Alert severity="success" sx={{ mb: 2 }}>
-              Message sent successfully! I'll get back to you soon.
+              ✅ Message sent successfully! I'll get back to you soon.
             </Alert>
           )}
           {submitStatus === 'error' && (
             <Alert severity="error" sx={{ mb: 2 }}>
-              Failed to send message. Please try again or email me directly.
+              ❌ Failed to send message. Please try again or email me directly at chenechoz@gmail.com
             </Alert>
           )}
 
@@ -257,7 +255,7 @@ function Contact() {
           </Box>
           
           <div className="direct-contact">
-            <p>Or email me directly at: <a href="mailto:wphiri@beda.ie">wphiri@beda.ie</a></p>
+            <p>Or email me directly at: <a href="mailto:chenechoz@gmail.com">chenechoz@gmail.com</a></p>
           </div>
         </div>
       </div>

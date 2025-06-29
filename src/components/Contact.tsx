@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import '../assets/styles/Contact.scss';
+import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
@@ -45,18 +46,15 @@ function Contact() {
     setIsSubmitting(true);
 
     try {
-      // Option 1: Integrate with EmailJS (uncomment when ready)
-      /*
-      await emailjs.sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
-        form.current,
-        'YOUR_PUBLIC_KEY'
+      // EmailJS Integration with your credentials
+      const result = await emailjs.sendForm(
+        'service_l9gmwci',      // Your Service ID
+        'template_5oreu2m',     // Your Template ID
+        form.current!,          // The form reference
+        '0PYaWxpG6RR69_Cpe'     // Your Public Key
       );
-      */
       
-      // Option 2: For now, simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      console.log('Email sent successfully:', result.text);
       
       // Clear form on success
       setName('');
@@ -65,7 +63,7 @@ function Contact() {
       setSubmitStatus('success');
       
     } catch (error) {
-      console.error('Error sending message:', error);
+      console.error('Error sending email:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -147,6 +145,7 @@ function Contact() {
               <TextField
                 required
                 id="name-field"
+                name="user_name"
                 label="Your Name"
                 placeholder="Enter your name"
                 value={name}
@@ -174,6 +173,7 @@ function Contact() {
               <TextField
                 required
                 id="email-field"
+                name="user_email"
                 label="Email Address"
                 placeholder="Enter your email address"
                 type="email"
@@ -204,6 +204,7 @@ function Contact() {
             <TextField
               required
               id="message-field"
+              name="message"
               label="Message"
               placeholder="Write your message here..."
               multiline

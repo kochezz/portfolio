@@ -1,25 +1,88 @@
-.contact_wrapper svg {
-  font-size: 1em;
-  vertical-align: middle;
-  margin-right: 5px;
+.contact_wrapper {
+  position: relative;
+  z-index: 1;
+  
+  svg {
+    font-size: 1em;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
 }
 
 .contact-form {
   padding-top: 20px;
+  position: relative;
+  z-index: 10;
 
-  button {
-    float: right;
-    background-color: white;
-    color: #050f0b;
+  // Ensure form elements are clickable but don't override Material-UI styling
+  .MuiTextField-root,
+  .MuiInputBase-root,
+  .MuiInputBase-input {
+    pointer-events: auto;
   }
 
-  button:hover {
-    background-color: #5000ca;
-    color: white;
+  .MuiButton-root {
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
+  // Light mode styling (default)
+  .MuiTextField-root {
+    .MuiOutlinedInput-root {
+      background-color: white;
+      color: #333;
+      
+      .MuiOutlinedInput-notchedOutline {
+        border-color: rgba(0, 0, 0, 0.23);
+      }
+      
+      &:hover .MuiOutlinedInput-notchedOutline {
+        border-color: rgba(0, 0, 0, 0.87);
+      }
+      
+      &.Mui-focused .MuiOutlinedInput-notchedOutline {
+        border-color: #5000ca;
+        border-width: 2px;
+      }
+    }
+    
+    .MuiInputLabel-root {
+      color: rgba(0, 0, 0, 0.6);
+      
+      &.Mui-focused {
+        color: #5000ca;
+      }
+    }
+    
+    .MuiFormHelperText-root {
+      color: rgba(0, 0, 0, 0.6);
+      
+      &.Mui-error {
+        color: #f44336;
+      }
+    }
+  }
+
+  // Custom button styling to match your original design
+  .MuiButton-contained {
+    float: right;
+    background-color: white !important;
+    color: #050f0b !important;
+    border: 1px solid #ccc;
+    
+    &:hover {
+      background-color: #5000ca !important;
+      color: white !important;
+    }
+    
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
   }
 
   fieldset {
-    background-color: white;
+    background-color: transparent;
   }
 }
 
@@ -32,10 +95,17 @@ label {
   display: flex;
   gap: 15px;
   padding-bottom: 15px;
+  
+  // Ensure responsive behavior
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .form-flex .MuiFormControl-root {
   width: 100%;
+  flex: 1; // Ensure equal width distribution
 }
 
 form {
@@ -45,4 +115,84 @@ form {
 .body-form {
   width: 100% !important;
   margin-bottom: 15px !important;
+}
+
+// Direct contact section
+.direct-contact {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  
+  a {
+    color: #5000ca;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Dark mode compatibility
+@media (prefers-color-scheme: dark) {
+  .contact-form {
+    .MuiTextField-root {
+      .MuiOutlinedInput-root {
+        background-color: rgba(255, 255, 255, 0.05);
+        color: white;
+        
+        .MuiOutlinedInput-notchedOutline {
+          border-color: rgba(255, 255, 255, 0.23);
+        }
+        
+        &:hover .MuiOutlinedInput-notchedOutline {
+          border-color: rgba(255, 255, 255, 0.87);
+        }
+        
+        &.Mui-focused .MuiOutlinedInput-notchedOutline {
+          border-color: #8c7cf0;
+          border-width: 2px;
+        }
+      }
+      
+      .MuiInputLabel-root {
+        color: rgba(255, 255, 255, 0.7);
+        
+        &.Mui-focused {
+          color: #8c7cf0;
+        }
+      }
+      
+      .MuiFormHelperText-root {
+        color: rgba(255, 255, 255, 0.7);
+        
+        &.Mui-error {
+          color: #f44336;
+        }
+      }
+    }
+  }
+  
+  .direct-contact {
+    border-top-color: rgba(255, 255, 255, 0.12);
+    
+    a {
+      color: #8c7cf0;
+    }
+  }
+}
+
+// Alert messages styling
+.MuiAlert-root {
+  margin-bottom: 16px;
+  
+  &.MuiAlert-standardSuccess {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: #2e7d32;
+  }
+  
+  &.MuiAlert-standardError {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: #c62828;
+  }
 }
